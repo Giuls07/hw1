@@ -1,0 +1,234 @@
+/*MAIN*/
+#album_view{
+    display: flex;
+    overflow-x: auto; /* Abilita lo scroll orizzontale */
+    gap: 10px;
+    padding: 10px;
+    scrollbar-width: none;
+}
+
+#album_view:hover{
+    scrollbar-width: thin;
+}
+
+#album_view img{
+    height: 250px;
+    width: 250px;
+    background-color: lightgrey;
+    border-radius: 7px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    flex-shrink: 0;
+}   
+
+#album_view img:hover{
+    transform: scale(1.05);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+#modal_view {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal_view img {
+    max-height: 90vh;
+    max-width: 90vw;
+}
+
+#ordini {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 30px;
+    /* height: 100%; */
+}
+
+#ordini div{
+    height: 250px;
+    width: 250px;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#ordini div:hover{
+    transform: scale(1.05);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+#ordini p{
+    color: white;
+    line-height: normal;
+    margin: 0;
+}
+
+#ordini span {
+    color: #001d3c;
+    font-size: 18.5px;
+}
+
+#contenitore{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 30px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card_content{
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 6px 6px 30px 4px rgb(0,0,0,0.2);
+    height: 125px;
+    width: 25vw;
+    padding: 10px;
+    position: relative;
+}
+
+.card_content p{
+    font-size: 14px;
+    color: #001d3c;
+    line-height: 1.3rem;
+}
+
+.card_content a {
+    color: #139df4;
+    font-size: 12px;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card_content a:hover{
+    text-decoration: underline;
+}
+
+#help_section{
+    border: none;
+}
+
+#help{
+    background-color: lightgrey;
+    height: 400px;
+    border-radius: 3px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    gap: 20px;
+}
+
+#help h3{
+    padding-left: 20px;
+    padding-bottom: 10px;
+    line-height: 2em;
+    border-bottom: #a7a8a7 1px solid;
+    color: #001d3c;
+    height: 20px;
+    margin: 0px;
+    display: inline-block;
+}
+
+#problema{
+    width: 92% !important;
+    margin-left: 4%;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    padding: 15px 5px;
+    height: 100%;
+    margin-bottom: 70px;
+}
+
+#help button{
+    width: 30%;
+    height: 10%;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #139df4;
+    color: #FFFFFF;
+    font-size: 1rem;
+    cursor: pointer;
+    position: absolute;
+    bottom: 12px;
+    right: 22px;
+    box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.4);
+}
+
+.error_input{
+    border: 2px solid red !important;
+}
+
+#errore{
+    color: red;
+    font-size: 0.9rem;
+    padding-left: 4%;
+}
+
+@media (max-width: 500px){
+    #ordini{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #ordini div{
+        width: 90%;
+        height: 25vh;
+        background-position-y: 10%;
+    }
+
+    #ordini p{
+        font-size: 1.4rem;
+    }
+
+    p#ecc{
+        font-size: 10rem;
+        padding-bottom: 11vh;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .card_content{
+        width: 90%;
+        height: fit-content;
+        padding-bottom: 25px;
+    }
+
+    #help input[type=text]{
+        width: 90%;
+    }
+
+    #help button{
+        width: 30%;
+        font-size: 0.9rem;
+    }
+}

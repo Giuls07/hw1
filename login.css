@@ -1,0 +1,130 @@
+.flex_nav{
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.account{
+    height: 30px;
+    cursor: pointer;
+}
+
+.account img{
+    width: 100%;
+    height: 100%;
+}
+
+.login {
+    padding-top: 97px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.login_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    box-shadow: 4px 4px 8px rgba(174, 188, 210, 1);
+}
+
+.login_container h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.login_container div {
+    margin-bottom: 20px;
+}
+
+.login_container label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #40648e;
+}
+
+.login_container input {
+    width: 160px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+}
+
+.login_container input:focus{
+    outline: none;
+    border-color: #29abe2;
+}
+
+#termini {
+    width: 100%;
+    font-size: 11px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#termini label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #40648e;
+}
+
+#termini input{
+    height: 20px;
+    width: 50px;
+}
+
+#termini input:checked{
+    background-color: #29abe2;
+}
+
+#termini input:hover{
+    cursor: pointer;
+}
+
+.login_container button {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #29abe2;
+    color: #FFFFFF;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.login_container h4 {
+    text-align: center;
+}
+
+.login_container a {
+    color: #29abe2;
+}
+
+.error {
+    color: red;
+    margin: 4px 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.error_input {
+    border: 1px solid red !important;
+}
+
+@media (max-width: 500px){
+    .flex_nav{
+        height: 105px;;
+    }
+
+    .login{
+        padding-top: 127px;
+    }
+}

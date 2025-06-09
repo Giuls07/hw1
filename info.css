@@ -1,0 +1,144 @@
+.flex_nav{
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.account{
+    height: 30px;
+    cursor: pointer;
+}
+
+.account img{
+    width: 100%;
+    height: 100%;
+}
+
+#info{
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+    width: 100%;
+}
+
+#info form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 450px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    box-shadow: 4px 4px 8px rgba(174, 188, 210, 1);
+}
+
+#info label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #40648e;
+}
+
+#info input {
+    width: 310px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+}
+
+#info input:focus{
+    outline: none;
+    border-color: #29abe2;
+}
+
+#info div{
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    gap: 10px;
+}
+
+#info div label{
+    font-size: 12px;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    color: #40648e;
+}
+
+#info div input{
+    height: 12px;
+}
+
+#info select{
+    width: 310px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+}
+
+#info select:focus{
+    outline: none;
+    border-color: #29abe2;
+}
+
+#info button{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #29abe2;
+    color: #FFFFFF;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+@media (max-width: 500px){
+
+    .flex_nav{
+        height: 105px;;
+    }
+
+    #info{
+        
+        width: 100%;
+    }
+
+    #info form{
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    #info label{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #info select{
+        width: 100%;
+    }
+
+    #info div{
+        width: 100%;
+        gap: 5px;
+        justify-content: center;
+    }
+    #info div label{
+        flex-direction: row;
+        width: 100px;
+        font-size: 13px;
+    }
+
+    #info div input{
+        height: 15px;
+    }
+
+    #info input{
+        width: 100%;
+    }
+
+}

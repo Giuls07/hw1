@@ -1,0 +1,267 @@
+.profile{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+#pfp_chooser{
+    height: 200px;
+    width: 200px;
+    border-radius: 1000px;
+    background-position: center;
+    background-size: cover;
+    border: 2px solid #001d3c;
+    position: relative;
+    cursor: pointer;
+}
+
+#modify_pfp{
+    height: 30px;
+    width: 30px;
+    border-radius: 1000px;
+    background-image: url("imgs/pencil.png");
+    background-position: center;
+    background-size: cover;
+    border: 2px solid #c2c2c0;
+    background-color: #d6d6d4;
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+}
+
+#close_popup{
+    position: relative;
+    left: 320px;
+    width: 30px;
+    height: 30px;
+    font-size: 42px;
+    color: darkred;
+    cursor: pointer;
+}
+
+#pfp_popup_content{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Slideshow container */
+#slideshow_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 20px 0;
+}
+
+/* Slides */
+#slide{
+  width: 170px;
+  height: 170px;
+  border-radius: 7px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+#slide img{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+#slide:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Arrows */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ddd;
+  border: none;
+  font-size: 22px;
+  text-align: center;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.arrow:hover {
+  background-color: #c2c0c0;
+}
+
+.prev {
+    position: absolute;
+    left: 30px;
+}
+
+.next {
+  right: 30px;
+}
+
+.profile_info, #modify_info{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 350px;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+#modify_info{
+    padding-top: 0px;
+}
+
+#modify_info form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 450px;
+}
+
+#modify_info label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #40648e;
+}
+
+#modify_info input {
+    width: 310px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+}
+
+#modify_info input:focus{
+    outline: none;
+    border-color: #29abe2;
+}
+
+#modify_info div{
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    gap: 10px;
+}
+
+#modify_info div label{
+    font-size: 12px;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    color: #40648e;
+}
+
+#modify_info div input{
+    height: 12px;
+}
+
+#modify_info select{
+    width: 310px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+}
+
+#modify_info select:focus{
+    outline: none;
+    border-color: #29abe2;
+}
+
+#modify_info button{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #29abe2;
+    color: #FFFFFF;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.profile_info div{
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+.profile_info h2{
+    color: #001d3c;
+}
+
+.profile_info a{
+    color: #000000;
+    font-weight: bold;
+    text-underline-offset: 3px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.profile_info a:hover{
+    color: #29abe2;
+}
+
+#delete:hover{
+    color: red;
+}
+
+
+#pfp_popup, #popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
+
+#popup_content {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#popup_buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.button{
+    font-weight: normal !important;
+
+}
+
+#popup_buttons button {
+    max-width: 165px;
+}
+
+#conferma{
+    background-color: #e53935;
+}

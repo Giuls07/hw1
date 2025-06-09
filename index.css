@@ -1,0 +1,51 @@
+.flex_nav{
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+#account{
+    height: 30px;
+    cursor: pointer;
+}
+
+#account img{
+    width: 100%;
+    height: 100%;
+}
+
+#index{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#index header{
+    text-align: center;
+    color: #001d3c;
+}
+
+#index h1{
+    color: #001d3c;
+    padding: 4.5px;
+    font-size: 2.5em;
+}
+
+#index h2{
+    color: #001d3c;
+    font-size: 1.5em;
+}
+
+#index a{
+    color: #001d3c;
+}
+
+#index a:hover{
+    font-size: 1.1em;
+}
+
+@media (max-width: 500px){
+    .flex_nav{
+        height: 105px;;
+    }
+}
